@@ -1,0 +1,185 @@
+﻿/* Background color for entire webpage */
+body {
+    background-image: url('../_images/BackgroundTest1.png');
+}
+
+
+/*https://css-tricks.com/snippets/css/transparent-background-images/ */
+/*http://eskipaper.com/images/ios7-wallpapers-2.jpg */
+#bgImage {
+    height: 100%;
+    width: 100%;
+    content: "";
+    /*background-image: url('../wallpaper.jpg');*/
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.panelbutton {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: lawngreen;
+}
+
+.panelbutton:hover {
+    color: yellow;
+}
+
+/* Change looks of Tabs */
+div #tabContainer li.panel a {
+    padding: 14px 20px;
+    float: left;
+    outline: none;
+    text-decoration: none;
+}
+
+/******************************/
+div #tabContainer li.panel {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    bottom: -80px;
+    left: 480px;
+}
+
+#tabContainer ul{
+    transform: skewY(-1.2deg);
+}
+
+#mainImg {
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+}
+
+/* https://stackoverflow.com/questions/7439042/css-js-to-prevent-dragging-of-ghost-image */
+.unfiltered-pic {
+    position: absolute;
+    top: -450px;
+    left: 12%;
+    bottom: 0;
+    margin: auto;
+}
+
+#mainImg p:first-of-type {
+    padding-top: 20px;
+}
+#mainImg p {
+    text-align: center;
+    position: absolute;
+    left: 280px;
+    top: 450px;
+}
+
+.ContentPanel {
+    position: fixed;
+    padding: 20px;
+    padding-bottom: 40px;
+    left: 35%;
+    top: 210px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+#divAJAXLoad{
+    position: absolute;
+    top: 450px;
+}
+
+.TabImage {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 290px;
+    left: 0px;
+    pointer-events: none;
+    z-index: 0;
+    background: rgba(55,55,55, 0);
+    filter: invert(150%);
+}
+
+.Logo {
+    position: fixed;
+    padding: 2px 0;
+    font: 44px "Arial";
+    top: 70px;
+    left: 200px;
+}
+.Logo img {
+    position: relative;
+    left: 60px;
+}
+
+.BigBG {
+    position: fixed;
+    height: 320px;
+    width: 100%;
+    top: -100px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.FooterMain {
+    position: fixed;
+    height: 275px;
+    width: 100%;
+    bottom: -100px;
+    z-index: -1;
+    background: rgba(55,55,55, 0);
+    filter: invert(150%);
+}
+
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3 */
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #111;
+}
+
+#green {
+    background-color: green;
+    box-shadow: 0 9px #023710;
+}
+#blue {
+    background-color: blue;
+    box-shadow: 0 9px #091270;
+}
+#red {
+    background-color: red;
+    box-shadow: 0 9px #700909;
+}
+#dark {
+    background-color: #222;
+    box-shadow: 0 9px #000;
+}
+
+.button:hover {
+    background-color: #3e8e41
+}
+
+.button:active {
+    transform: translateY(4px);
+}
+
+.bodyBackground {
+    position: absolute;
+    height: 640px;
+    width: 640px;
+    z-index: -1;
+}

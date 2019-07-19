@@ -1,0 +1,107 @@
+﻿<!-- Made by Jesse C. and Dustin C.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mellow Jello Interactive</title>
+
+        <!-- PreBuilt Stylesheet open to edit-->
+        <link href="../_css/custom_Main2.css" rel="stylesheet" />
+        <!-- Custom Stylesheet-->
+        <link href="../_css/custom_MainStyle.css" rel="stylesheet" />
+
+        <!-- Essential Scripts-->
+        <script src="../_js/jquery.min.js"></script>
+        <script src="../_js/jquery-ui.min.js"></script>
+
+
+        <!-- Other custom scripts-->
+        <script src="../_js/custom_ClickerAnimations.js"></script>
+        <script src="../_js/custom_MainGames.js"></script>
+        <script src="../_js/custom_RandomPicture.js"></script>
+        <script src="../_js/custom_TabTransitions.js"></script>
+        <script src="../_js/custom_ThemeSelect.js"></script>
+
+
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-136238899-1');
+        </script>
+    </head>
+
+    <!-- Begin body-->
+    <body>
+        <!-- Displays the two header images -->
+        <img class="BigBG" id="BigBG" img src="../_images/Jello_Green.png" />
+        <img src="../_images/P1211.png" class ="TabImage"/>
+        
+        <div id="bgImage"></div>
+            <div class="wrapper">
+                <div class="content">
+                    <div class="main">
+                        <div class="Logo">
+                            <h1>Mellow Jello Interactive</h1>
+                            <img src="../_images/jelloVariety/Jello_Green.png" height="100" width="100" id="JelloLogo" />
+                        </div>
+                        <!-- Main selection of webpages tabs -->
+                        <div id="tabContainer">
+                            <ul>
+                                <li class="panel"><a href="#panel1" class="panelbutton" id="Home" onclick="SelectedPanel(this)">Home</a></li>
+                                <li class="panel"><a href="#panel3" class="panelbutton" onclick="SelectedPanel(this)">Clicking Adventure</a></li>
+                                <li class="panel"><a href="#panel4" class="panelbutton" id="Themes" onclick="SelectedPanel(this)">Themes</a></li>
+                                <li class="panel"><a href="#panel5" class="panelbutton" onclick="SelectedPanel(this)">Word Search</a></li>
+                            </ul>
+
+                            <!-- panel 1 -->
+                            <div id="panel1" class="ContentPanel">
+                                <br />
+                                <p>Welcome! Feel free to look around!</p>
+                                <img src="../_images/jelloVariety/Jello_Green.png" />
+
+                            </div>
+                            <!-- panel 2 -->
+                            <!-- panel 3 -->
+                            <div id="panel3" class="ContentPanel">
+                                <div id='mainImg'>
+                                    <img src='../_images/2.png' id='mug' class='unfiltered-pic' style="background-color:red" height='200' width='200' onclick="clickCounter()">
+                                    <img class="bodyBackground" src="../_images/BodyBackground1.png" />
+                                    <p>CLICK HIM!!!</p>
+                                    <p id="ClickCount">Clicks: 0</p>
+                                </div>
+                            </div>
+                            <!-- panel 4 -->
+                            <div id="panel4" class="ContentPanel">
+                                <!-- Change site theme-->
+                                <p>Choose your favorite theme!!</p>
+                                <button class="button" id="green" onclick="Default()">Green</button>
+                                <button class="button" id="blue" onclick="Theme1()">Blue</button>
+                                <button class="button" id="red" onclick="Theme2()">Red</button>
+                                <button class="button" id="dark" onclick="Theme3()">Dark</button>
+                            </div>
+                            <!-- panel 5 -->
+                            <div id="panel5" class="ContentPanel">
+                                <!-- Word Search-->
+                                <p>Can you find all the words?!</p>
+                                <p id="wordSearch"></p>
+
+                                <div id="divAJAXLoad" style="border-style: solid">
+                                    <button id="btnAJAXLoad">View Words to Find</button>
+                                </div> <!-- End divAJAXLoad -->
+                            </div><!-- End panel5 -->
+
+                        </div><!-- End tabContainer -->
+                    </div><!-- Main -->
+                </div><!-- End Content-->
+            </div> <!-- End Wrapper -->
+
+	    <footer>
+            <img src="../_images/FooterMain.png" class="FooterMain" />
+		    <p>Created by Jesse C.</p>
+	    </footer>
+    </body><!-- End Body -->
+</html>
